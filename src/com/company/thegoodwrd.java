@@ -37,11 +37,11 @@ Scanner scan =  new Scanner(System.in);
 
 
         System.out.println("Good," + currentime+ "," +nom+"!");
-// Displays current time/date based on system prefrences
+// Displays current time/date based on system preferences
         DateTimeFormatter DTF = DateTimeFormatter.ofPattern("MM/dd/uuuu");
         System.out.println(ZoneOffset.systemDefault());
         System.out.println(OffsetDateTime.now().getOffset());
-// Displays timezone based on system prefrences
+// Displays timezone based on system preferences
         System.out.println();
         ZonedDateTime now = ZonedDateTime.now();
         System.out.println(DTF.format(now));
@@ -67,6 +67,14 @@ Scanner scan =  new Scanner(System.in);
 
             thegoodwords.add("\"Don’t let having a fu***d up past stop you from becoming a better person . " +
                             "\nGrind pass those mistakes change actually mean WTF you gone do.\"\n");
+// latest quotes(8/11/21)
+        thegoodwords.add("\"A simp chases a female to be put on a collar," +
+                         "\na man chases the bag to snag another dollar.\"-The Good Word 21:15");
+
+        thegoodwords.add("\"Always remember a fool is  for only a fool speaks on something he ain't know \"-The Good Word 21:12");
+        thegoodwords.add("\"For a dream is called a dream because it isn't reality," +
+                "\nbut the only person who can see them is thou self, they dream must be worked into existence \"-The Good Word 20:4");
+        thegoodwords.add("\"For thou art a King, keepeth thou head up and search for thots no longer\"-The Good Word 19:8");
 
 // Allows randomization of the holy quotes
             int thebookofghetto = (int)(Math.random() * thegoodwords.size());
